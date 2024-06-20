@@ -1,0 +1,14 @@
+{
+    acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
+
+yoorclinic.local {
+    tls internal
+    reverse_proxy backend1:80
+}
+
+demo-clinic.local {
+    tls internal
+    reverse_proxy backend2:80
+}
+
